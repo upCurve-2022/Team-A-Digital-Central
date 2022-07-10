@@ -1,0 +1,122 @@
+[
+    {
+      "author": "Chinua Achebe",
+      "country": "Nigeria",
+      "imageLink": "images/things-fall-apart.jpg",
+      "language": "English",
+      "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
+      "pages": 209,
+      "title": "Things Fall Apart",
+      "year": 1958
+    },
+    {
+      "author": "Hans Christian Andersen",
+      "country": "Denmark",
+      "imageLink": "images/fairy-tales.jpg",
+      "language": "Danish",
+      "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
+      "pages": 784,
+      "title": "Fairy tales",
+      "year": 1836
+    },
+    {
+      "author": "Dante Alighieri",
+      "country": "Italy",
+      "imageLink": "images/the-divine-comedy.jpg",
+      "language": "Italian",
+      "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
+      "pages": 928,
+      "title": "The Divine Comedy",
+      "year": 1315
+    },
+    {
+      "author": "Rumi",
+      "country": "Sultanate of Rum",
+      "imageLink": "images/the-masnavi.jpg",
+      "language": "Persian",
+      "link": "https://en.wikipedia.org/wiki/Masnavi\n",
+      "pages": 438,
+      "title": "The Masnavi",
+      "year": 1236
+    },
+    {
+      "author": "Salman Rushdie",
+      "country": "United Kingdom, India",
+      "imageLink": "images/midnights-children.jpg",
+      "language": "English",
+      "link": "https://en.wikipedia.org/wiki/Midnight%27s_Children\n",
+      "pages": 536,
+      "title": "Midnight's Children",
+      "year": 1981
+    },
+    {
+      "author": "Saadi",
+      "country": "Persia, Persian Empire",
+      "imageLink": "images/bostan.jpg",
+      "language": "Persian",
+      "link": "https://en.wikipedia.org/wiki/Bustan_(book)\n",
+      "pages": 298,
+      "title": "Bostan",
+      "year": 1257
+    },
+    {
+      "author": "Virgil",
+      "country": "Roman Empire",
+      "imageLink": "images/the-aeneid.jpg",
+      "language": "Classical Latin",
+      "link": "https://en.wikipedia.org/wiki/Aeneid\n",
+      "pages": 442,
+      "title": "The Aeneid",
+      "year": -23
+    },
+    {
+      "author": "Vyasa",
+      "country": "India",
+      "imageLink": "images/the-mahab-harata.jpg",
+      "language": "Sanskrit",
+      "link": "https://en.wikipedia.org/wiki/Mahabharata\n",
+      "pages": 276,
+      "title": "Mahabharata",
+      "year": -700
+    },
+    {
+      "author": "Walt Whitman",
+      "country": "United States",
+      "imageLink": "images/leaves-of-grass.jpg",
+      "language": "English",
+      "link": "https://en.wikipedia.org/wiki/Leaves_of_Grass\n",
+      "pages": 152,
+      "title": "Leaves of Grass",
+      "year": 1855
+    },
+    {
+      "author": "Virginia Woolf",
+      "country": "United Kingdom",
+      "imageLink": "images/mrs-dalloway.jpg",
+      "language": "English",
+      "link": "https://en.wikipedia.org/wiki/Mrs_Dalloway\n",
+      "pages": 216,
+      "title": "Mrs Dalloway",
+      "year": 1925
+    },
+    {
+      "author": "Virginia Woolf",
+      "country": "United Kingdom",
+      "imageLink": "images/to-the-lighthouse.jpg",
+      "language": "English",
+      "link": "https://en.wikipedia.org/wiki/To_the_Lighthouse\n",
+      "pages": 209,
+      "title": "To the Lighthouse",
+      "year": 1927
+    },
+    {
+      "author": "Marguerite Yourcenar",
+      "country": "France/Belgium",
+      "imageLink": "images/memoirs-of-hadrian.jpg",
+      "language": "French",
+      "link": "https://en.wikipedia.org/wiki/Memoirs_of_Hadrian\n",
+      "pages": 408,
+      "title": "Memoirs of Hadrian",
+      "year": 1951
+    }
+  ]
