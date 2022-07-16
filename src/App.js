@@ -1,13 +1,24 @@
 import React from "react";
 import "./App.css";
+import Navbar from "./Components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import SearchBar from "./Components/SearchBar";
 import ProductData from "./Data.json"; 
 
 function App() {
   return (
-    <div className="App">
-      <SearchBar placeholder="Enter a Product Name..." data={ProductData} />
-    </div>
+    <><Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" />
+        <Route path="/products" />
+        <Route path="/contact" />
+        <Route path="/about" />
+      </Routes>
+      
+    </Router><div className="App">
+        <SearchBar placeholder="Enter a Product Name..." data={ProductData} />
+      </div></>
   );
 }
 

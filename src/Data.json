@@ -1,122 +1,181 @@
 [
+    { "id": 1,
+        "name": "Cap 1 t-shirt ",
+        "description": "This tee is made from our lightest-weight Capilene fabric to achieve a harmonic balance between technical ability and slacker prowess."
+    },
+
+   { "id": 2,
+    "name": "Cap 2 t-shirt ",
+    "description": "This one revels in the sweat jamborees of hill climbs, ridge runs and desert singletrack under a resolute sun."
+   },
+
+   {
+    "id": 3,
+    "name": "Cap 2 zip neck",
+    "description": "Designed for wet-then-chill pursuits like backcountry skiing, alpine climbing and mountain trekking, our fastest-drying performance baselayer will keep you cool during endurance activities in warmer temperatures.."
+   },
+
+   {
+    "id": 4,
+    "name": "Cap 3 zip neck",
+    "description": "Capilene 3 provides excellent insulation and next-to-skin comfort for endurance activities in cool to cold conditions. Its dense interior honeycomb construction is brushed for warmth, softness and compressibility."
+    },
+
     {
-      "author": "Chinua Achebe",
-      "country": "Nigeria",
-      "imageLink": "images/things-fall-apart.jpg",
-      "language": "English",
-      "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
-      "pages": 209,
-      "title": "Things Fall Apart",
-      "year": 1958
+        "id": 5,
+        "name": "Cap 4 bottoms",
+        "description": "For sufferfests like the Grand in January, a pair of these warm bottoms will add a bright side to your grief. Our warmest synthetic performance baselayer, Capilene 4 fabric is stretchy and compressible."
+    },
+
+    {
+        "id": 6,
+        "name": "City by the sea t-shirt",
+        "description": "Illustrating the renaissance of sea-inspired, community living, artist Geoff McFetridge's work adorns the City-By-The-Sea T-Shirt. Lightweight, 100% organic cotton fabric is ringspun for softness."
+    },
+
+    {
+        "id": 7,
+        "name": "Compound cargo pants - long",
+        "description": " The ultimate do-everything pants, built to withstand daily abuse. With cargo pockets modeled after vintage army blocks, our Compound Cargos are perfect for hitting the trail with a stash of climbing shoes, multitools."
+    },
+
+    {
+        "id": 8,
+        "name": "Compound cargo pants - reg",
+        "description": "The ultimate do-everything pants, built to withstand daily abuse. With cargo pockets modeled after vintage army blocks, our Compound Cargos are perfect for hitting the trail with a stash of climbing shoes, multitools."
+    },
+
+    {
+        "id": 9,
+        "name": "Continental shorts",
+        "description": "Wrinkle-resistant travel shorts that do what any great mountainside-to-museum garment should: wick moisture, dry quickly, and look sharp after successive days of use. The Continentals deploy our classic Guide fabric - a tough, agile."
+    },
+
+    {
+        "id": 10,
+        "name": "Cotton board shorts",
+        "description": "A classic in fabric and form, the 5.6-oz 100% organic cotton brushed canvas of these board shorts provides lightweight durability in and out of the water, with a pattern inspired by plantation-era cane field workshirts."
+    },
+      {
+    "id" : 11,
+    "description" : "Soft, stretchy polyester fabric is fast wicking, quick drying and breathable",
+    "name" : "Baby sunshade top"
     },
     {
-      "author": "Hans Christian Andersen",
-      "country": "Denmark",
-      "imageLink": "images/fairy-tales.jpg",
-      "language": "Danish",
-      "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
-      "pages": 784,
-      "title": "Fairy tales",
-      "year": 1836
+    "id" : 12,
+    "description" : " Even Baggies, our most popular shorts for anything, or nothing, occasionally need an update.",
+    "name" : "Baggies shorts"
     },
     {
-      "author": "Dante Alighieri",
-      "country": "Italy",
-      "imageLink": "images/the-divine-comedy.jpg",
-      "language": "Italian",
-      "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
-      "pages": 928,
-      "title": "The Divine Comedy",
-      "year": 1315
+    "id" : 13,
+    "description" : "Whenever you're at the junction of water and land, neutralize the sun's unforgiving rays with the wide brim and soft design of our versatile Beach Bucket.",
+    "name" : "Beach bucket"
     },
     {
-      "author": "Rumi",
-      "country": "Sultanate of Rum",
-      "imageLink": "images/the-masnavi.jpg",
-      "language": "Persian",
-      "link": "https://en.wikipedia.org/wiki/Masnavi\n",
-      "pages": 438,
-      "title": "The Masnavi",
-      "year": 1236
+    "id" : 14,
+    "description" : "June nights camped out in New Mexico's Navajo country are starry and cold. Layer up in the softest fleece we've spun to date.",
+    "name" : "Better sweater jkt"
     },
     {
-      "author": "Salman Rushdie",
-      "country": "United Kingdom, India",
-      "imageLink": "images/midnights-children.jpg",
-      "language": "English",
-      "link": "https://en.wikipedia.org/wiki/Midnight%27s_Children\n",
-      "pages": 536,
-      "title": "Midnight's Children",
-      "year": 1981
+    "id" : 15,
+    "description" : "11 in. - Go forward where others cringe. Our Borderless Shorts are made for prying into the outer reaches of unnamed terrain",
+    "name" : "Borderless shorts"
     },
     {
-      "author": "Saadi",
-      "country": "Persia, Persian Empire",
-      "imageLink": "images/bostan.jpg",
-      "language": "Persian",
-      "link": "https://en.wikipedia.org/wiki/Bustan_(book)\n",
-      "pages": 298,
-      "title": "Bostan",
-      "year": 1257
+    "id" : 16,
+    "description" : "One of summertime's gifts is the chance to freely traverse alpine country. These shorts let you make the most of the season.",
+    "name" : "Borderless shorts-7 in."
     },
     {
-      "author": "Virgil",
-      "country": "Roman Empire",
-      "imageLink": "images/the-aeneid.jpg",
-      "language": "Classical Latin",
-      "link": "https://en.wikipedia.org/wiki/Aeneid\n",
-      "pages": 442,
-      "title": "The Aeneid",
-      "year": -23
+    "id" : 17,
+    "description" : " Besides its shade-casting prowess, the Bucket provides perfect eye cover after an extra-large fish taco fest.",
+    "name" : "Bucket hat"
     },
     {
-      "author": "Vyasa",
-      "country": "India",
-      "imageLink": "images/the-mahab-harata.jpg",
-      "language": "Sanskrit",
-      "link": "https://en.wikipedia.org/wiki/Mahabharata\n",
-      "pages": 276,
-      "title": "Mahabharata",
-      "year": -700
+    "id" : 18,
+    "description" : "Spring skiing is as transient as the wind. Move fast, move light, and still stay dry with our lightest-weight Capilene performance baselayer.",
+    "name" : "Cap 1 bottoms"
     },
     {
-      "author": "Walt Whitman",
-      "country": "United States",
-      "imageLink": "images/leaves-of-grass.jpg",
-      "language": "English",
-      "link": "https://en.wikipedia.org/wiki/Leaves_of_Grass\n",
-      "pages": 152,
-      "title": "Leaves of Grass",
-      "year": 1855
+    "id" : 19,
+    "description" : "On bivy or belay, the form-fitting Capilene 1 Boxer Briefs stay dry and comfortable. Made from 100% recycled polyester",
+    "name" : "Cap 1 boxer briefs"
     },
     {
-      "author": "Virginia Woolf",
-      "country": "United Kingdom",
-      "imageLink": "images/mrs-dalloway.jpg",
-      "language": "English",
-      "link": "https://en.wikipedia.org/wiki/Mrs_Dalloway\n",
-      "pages": 216,
-      "title": "Mrs Dalloway",
-      "year": 1925
+    "id" : 20,
+    "description" : "This tee is made from our lightest-weight Capilene fabric to achieve a harmonic balance between technical ability and slacker prowess.",
+    "name" : "Cap 1 graphic t-shirt "
     },
-    {
-      "author": "Virginia Woolf",
-      "country": "United Kingdom",
-      "imageLink": "images/to-the-lighthouse.jpg",
-      "language": "English",
-      "link": "https://en.wikipedia.org/wiki/To_the_Lighthouse\n",
-      "pages": 209,
-      "title": "To the Lighthouse",
-      "year": 1927
-    },
-    {
-      "author": "Marguerite Yourcenar",
-      "country": "France/Belgium",
-      "imageLink": "images/memoirs-of-hadrian.jpg",
-      "language": "French",
-      "link": "https://en.wikipedia.org/wiki/Memoirs_of_Hadrian\n",
-      "pages": 408,
-      "title": "Memoirs of Hadrian",
-      "year": 1951
-    }
-  ]
+
+
+	{
+		"id" : 31,
+		"date_created" : "2022-07-13 15:28:12.488862",
+		"date_updated" : "2022-07-13 15:28:12.488862",
+		"description" : "Fully featured commuter backpack ensures that your life stays organized.",
+		"name" : "Crosstown"
+	},
+	{
+		"id" : 32,
+		"date_created" : "2022-07-13 15:29:59.210246",
+		"date_updated" : "2022-07-13 15:29:59.210246",
+		"description" : "Our Custodian Pants are defined by their strong work ethic",
+		"name" : "Custodian pants-long"
+	},
+	{
+		"id" : 33,
+		"date_created" : "2022-07-13 15:35:31.171944",
+		"date_updated" : "2022-07-13 15:35:31.171944",
+		"description" : "This ultra-lightweight jacket is cut above the waist for serious wading.",
+		"name" : "Deep wading jkt"
+	},
+	{
+		"id" : 34,
+		"date_created" : "2022-07-13 15:37:23.205116",
+		"date_updated" : "2022-07-13 15:37:23.205116",
+		"description" : "Our Delivery Shorts are built for all-day comfort and durability, with simple, practical style.",
+		"name" : "Delivery shorts"
+	},
+	{
+		"id" : 35,
+		"date_created" : "2022-07-13 15:41:22.412876",
+		"date_updated" : "2022-07-13 15:41:22.412876",
+		"description" : "This comes packed with ultra-toasty 800-fill down that traps heat in alpine conditions.",
+		"name" : "Down sweater vest"
+	},
+	{
+		"id" : 36,
+		"date_created" : "2022-07-13 15:42:29.198905",
+		"date_updated" : "2022-07-13 15:42:29.198905",
+		"description" : "The tee is made from 100% organic cotton fabric; PVC- and phthalate-free screen print inks are easier on the environment. ",
+		"name" : "Dragoons t-shirt"
+	},
+	{
+		"id" : 37,
+		"date_created" : "2022-07-13 15:44:49.682655",
+		"date_updated" : "2022-07-13 15:44:49.682655",
+		"description" : "Essential wear for splitting logs, driving nails or applying a little more chewing gum to the crack in the U-joint.",
+		"name" : "Duck pants-long "
+	},
+	{
+		"id" : 38,
+		"date_created" : "2022-07-13 15:46:59.366903",
+		"date_updated" : "2022-07-13 15:46:59.366903",
+		"description" : "Our Elias is made from a welcoming blend of 95% organic cotton and 5% spandex in an athletic, climbing cut.",
+		"name" : "Elias fz sweatshirt"
+	},
+	{
+		"id" : 39,
+		"date_created" : "2022-07-13 15:55:47.060515",
+		"date_updated" : "2022-07-13 15:55:47.060515",
+		"description" : " It has a hospitable mix of 95% organic cotton with 5% spandex for suppleness on dynamic moves.",
+		"name" : "Elias sweatshirt"
+	},
+	{
+		"id" : 40,
+		"date_created" : "2022-07-13 15:56:55.199863",
+		"date_updated" : "2022-07-13 15:56:55.199863",
+		"description" : " Made with 65% lightweight, breathable, all-recycled polyester and 35% organic cotton plain weave, the Fezz won't wrinkle in the tightest corner of your travel duffel.",
+		"name" : "Fezzman shirt"
+	}
+]
