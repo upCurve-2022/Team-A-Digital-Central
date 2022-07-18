@@ -12,7 +12,7 @@ import {
     OpenLinksButton,
     NavbarLinkExtended,
 } from './Navbar.style'
-import LogoImage from '../logo1.png'
+import LogoImage from '../logo.png'
 
 
 function Navbar() {
