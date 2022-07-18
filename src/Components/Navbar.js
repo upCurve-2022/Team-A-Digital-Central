@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "../App"
 import { 
     NavbarContainer,
     LeftContainer,
@@ -11,7 +12,7 @@ import {
     OpenLinksButton,
     NavbarLinkExtended,
 } from './Navbar.style'
-import LogoImage from '../logo.png'
+import LogoImage from '../logo1.png'
 
 
 function Navbar() {
@@ -28,6 +29,7 @@ function Navbar() {
                     <NavbarLink to="/"> Home</NavbarLink>
                     <NavbarLink to="/login"> Login</NavbarLink>
                     <NavbarLink to="./products"> Products</NavbarLink>
+                    <NavbarLink to="./products"> </NavbarLink>
                     <OpenLinksButton 
                         onClick={() => {
                             setExtendNavbar((curr) => !curr);

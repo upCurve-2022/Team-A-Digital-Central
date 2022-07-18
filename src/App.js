@@ -11,9 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" />
-        <Route path="/products" />
+        <Route path="/login" />
         <Route path="/contact" />
-        <Route path="/about" />
       </Routes>
       
     </Router><div className="App">

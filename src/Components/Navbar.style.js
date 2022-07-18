@@ -14,15 +14,15 @@ export const NavbarContainer = styled.nav`
 `;
 
 export const LeftContainer = styled.div`
-  flex: 30%;
+  flex: 20%;
   display: flex;
   justify-content: flex-end;
-  padding-right: 50px;
+  padding-right: 100px;
   /* background-color: black; */
 `;
 
 export const RightContainer = styled.div`
-  flex: 70%;
+  flex: 80%;
   display: flex;
   align-items: center;
   padding-left: 5%;
@@ -35,7 +35,8 @@ export const NavbarInnerContainer = styled.div`
 `;
 
 export const NavbarLinkContainer = styled.div`
-  display: flex;
+  display: left;
+  padding-left: 50%;
 `;
 
 export const NavbarLink = styled(Link)`
@@ -58,9 +59,10 @@ export const NavbarLinkExtended = styled(Link)`
 `;
 
 export const Logo = styled.img`
-  margin: 10px;
-  max-width: 180px;
-  height: auto;
+  margin: -60px;
+  max-width: 250px;
+  height: 250%;
+  filter: contrast(500%) brightness(50000%);
 `;
 
 export const OpenLinksButton = styled.button`
