@@ -61,8 +61,11 @@ export const NavbarLinkExtended = styled(Link)`
 export const Logo = styled.img`
   margin: -60px;
   max-width: 250px;
-  height: 250%;
+  height: auto;
   filter: contrast(500%) brightness(50000%);
+  @media (min-width: 700px) {
+    height: auto;
+  }
 `;
 
 export const OpenLinksButton = styled.button`
