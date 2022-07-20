@@ -2,8 +2,6 @@ import React from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-// import SearchBar from "./Components/SearchBar";
-// import ProductData from "./Data.json"; 
 import SearchFilter from "./Components/SearchFilter"
 
 function App() {
@@ -21,7 +19,6 @@ function App() {
       </Router>
 
       <div className="App">
-        {/* <SearchBar placeholder="Enter a Product Name..." data={ProductData} /> */}
         <SearchFilter />
       </div>
     </>

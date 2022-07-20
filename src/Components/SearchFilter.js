@@ -34,6 +34,9 @@ function App() {
                       <img src={val.imageurl} alt="" />
                       <h3>{val.name}</h3>
                       <p className="price">${val.price}</p>
+                      <p className="extra-content">{val.description}</p>
+
+                      
                   </div> 
                 )
               })
