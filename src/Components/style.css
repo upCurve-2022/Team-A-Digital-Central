@@ -49,3 +49,10 @@
     font-weight: 500;
     width: 200px;
   }
+
+  .read-more-link{
+    color: blueviolet;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }

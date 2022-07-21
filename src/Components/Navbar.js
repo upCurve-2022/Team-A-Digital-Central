@@ -28,8 +28,7 @@ function Navbar() {
                 <NavbarLinkContainer>
                     <NavbarLink to="/"> Home</NavbarLink>
                     <NavbarLink to="/login"> Login</NavbarLink>
-                    <NavbarLink to="./products"> Products</NavbarLink>
-                    <NavbarLink to="./products"> </NavbarLink>
+                    <NavbarLink to="/details"> Products</NavbarLink>
                     <OpenLinksButton 
                         onClick={() => {
                             setExtendNavbar((curr) => !curr);

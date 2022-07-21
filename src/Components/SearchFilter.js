@@ -33,10 +33,11 @@ function App() {
                   <div className="template" key={val.id}>
                       <img src={val.imageurl} alt="" />
                       <h3>{val.name}</h3>
-                      <p className="price">${val.price}</p>
+                      <p className="price">₹{val.price}</p>
                       <p className="extra-content">{val.description}</p>
-
                       
+                      
+                      <a className="read-more-link" onClick={()=>{}}><h2>Read More</h2></a>
                   </div> 
                 )
               })
