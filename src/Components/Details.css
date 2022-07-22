@@ -3,7 +3,8 @@
     width: 100%;
     margin: 100px auto;
     box-shadow: 0 0 5px #492F10;
-    background-color: #FDD2BF;
+    /* background-color: #FDD2BF; */
+    background-image: linear-gradient(90deg, #DF5E5E, #FDD2BF);
   }
   .details{
     display: flex;

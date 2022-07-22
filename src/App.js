@@ -18,8 +18,7 @@ function App() {
           <Route path = "/product/:id" element = {<Details />} />
         </Routes>
 
-        
-        
+ 
       </Router>
 
       <div className="App">
