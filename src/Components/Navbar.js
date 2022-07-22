@@ -26,7 +26,7 @@ function Navbar() {
 
             <RightContainer>
                 <NavbarLinkContainer>
-                    <NavbarLink to="/"> Home</NavbarLink>
+                    <NavbarLink to="/SearchFilter"> Home</NavbarLink>
                     <NavbarLink to="/login"> Login</NavbarLink>
                     <NavbarLink to="/details"> Products</NavbarLink>
                     <OpenLinksButton 
