@@ -26,7 +26,7 @@ function Navbar() {
 
             <RightContainer>
                 <NavbarLinkContainer>
-                    <NavbarLink to="/SearchFilter"> Home</NavbarLink>
+                    <NavbarLink to="/"> Home</NavbarLink>
                     <NavbarLink to="/details"> Products</NavbarLink>
                     <OpenLinksButton 
                         onClick={() => {
@@ -42,7 +42,7 @@ function Navbar() {
 
         {extendNavbar && (
             <NavbarExtendedContainer>
-                <NavbarLinkExtended to="/SearchFilter"> Home</NavbarLinkExtended>
+                <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>
                 <NavbarLinkExtended to="/details"> Products</NavbarLinkExtended>
             </NavbarExtendedContainer>
         )}

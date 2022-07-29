@@ -15,9 +15,15 @@ function App() {
         
         <Routes>
           
-            <Route  path = "/" exact element = {<SearchFilter />} />
-            <Route  path = "/details" exact element = {<Details />} />
-            {/* <Route  path = "/product/:id"exact element = {<Details />} /> */}
+          <Route  path = "/" exact element = {
+            <SearchFilter />
+          } />
+
+          <Route  path = "/details" exact element = {
+            <Details />
+          } />
+
+          {/* <Route  path = "/product/:id"exact element = {<Details />} /> */}
       
         </Routes>
 
