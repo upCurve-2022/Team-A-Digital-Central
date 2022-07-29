@@ -43,9 +43,9 @@ function Navbar() {
 
         {extendNavbar && (
             <NavbarExtendedContainer>
-                <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>
+                <NavbarLinkExtended to="/SearchFilter"> Home</NavbarLinkExtended>
                 <NavbarLinkExtended to="/login"> Login</NavbarLinkExtended>
-                <NavbarLinkExtended to="./products"> Products</NavbarLinkExtended>
+                <NavbarLinkExtended to="/details"> Products</NavbarLinkExtended>
             </NavbarExtendedContainer>
         )}
     </NavbarContainer>

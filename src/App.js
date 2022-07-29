@@ -12,18 +12,16 @@ function App() {
         <Navbar />
         
         <Routes>
-          <Route path = "/"/>
-          <Route path = "/login" />
-          <Route path = "/details" element = {<Details />} />
-          <Route path = "/product/:id" element = {<Details />} />
+          <Route exact path = "/" element = {<SearchFilter />}/>
+          <Route  exact path = "/details" element = {<Details />} />
+          <Route exact path = "/login" />
+          <Route exact path = "/product/:id" element = {<Details />} />
         </Routes>
 
  
       </Router>
 
-      <div className="App">
-        <SearchFilter />
-      </div>
+      
     </>
   );
 }

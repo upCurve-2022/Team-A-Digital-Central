@@ -1,11 +1,29 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
+import {Link} from 'react-router-dom';
 import './style.css';
-import data from "../productdetails.json";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [items, setItems] = useState([]);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:8888/api/v1/products/prducts")
+    .then(res => res.json())
+    .then(
+      (result) =>{
+        console.log('called get items')
+        console.log(result)
+        setItems(result)
+      },
+
+      (error) => {
+        setError(error);
+      }
+    )
+  },[] )
+
   return (
-    <>
       <div className="templateContainer">
         <div className="searchInput_Container">
           <input 
@@ -20,7 +38,7 @@ function App() {
 
         <div className="template_Container">
           {
-            data 
+            items 
               .filter((val) => {
                 if(searchTerm == ""){
                   return val;
@@ -36,15 +54,15 @@ function App() {
                       <p className="price">₹{val.price}</p>
                       <p className="extra-content">{val.description}</p>
                       
-                      
-                      <a className="read-more-link" onClick={()=>{}}><h2>Read More</h2></a>
+                      <Link to="/Details">Read More</Link>
+                      {/* <a className="read-more-link" onClick={()=>{}}><h2>Read More</h2></a> */}
                   </div> 
                 )
               })
           }
         </div>
+
       </div>
-    </>
   )
 }
 
