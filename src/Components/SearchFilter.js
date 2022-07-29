@@ -54,7 +54,7 @@ function App() {
                       <p className="price">₹{val.price}</p>
                       <p className="extra-content">{val.description}</p>
                       
-                      <Link to="/Details">Read More</Link>
+                      <Link to="/Details" className = "read-more-link">Read More</Link>
                       {/* <a className="read-more-link" onClick={()=>{}}><h2>Read More</h2></a> */}
                   </div> 
                 )

@@ -5,17 +5,20 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import SearchFilter from "./Components/SearchFilter";
 import Details from './Components/Details';
 
+<div className="App"></div>
 function App() {
+   
   return (
     <>
       <Router>
         <Navbar />
         
         <Routes>
-          <Route exact path = "/" element = {<SearchFilter />}/>
-          <Route  exact path = "/details" element = {<Details />} />
-          <Route exact path = "/login" />
-          <Route exact path = "/product/:id" element = {<Details />} />
+          
+            <Route  path = "/" exact element = {<SearchFilter />} />
+            <Route  path = "/details" exact element = {<Details />} />
+            {/* <Route  path = "/product/:id"exact element = {<Details />} /> */}
+      
         </Routes>
 
  
@@ -25,5 +28,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;
