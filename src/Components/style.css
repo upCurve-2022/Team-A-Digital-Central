@@ -51,8 +51,8 @@
   }
 
   .read-more-link{
-    color: blueviolet;
     text-decoration: none;
-    letter-spacing: 1px;
+    color: black;
     cursor: pointer;
+    text-transform: uppercase;
   }
