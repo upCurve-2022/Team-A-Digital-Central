@@ -1,149 +1,111 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 class App extends Component {
 
-  constructor()
-  {
+  constructor() {
     super()
-    this.state={
-      searchData:null,
-      noData:null,
+    this.state = {
+      searchData: null,
+      noData: false,
+      prodt: null,
     }
   }
-  search(key)
-  {
+  search(key) {
     console.warn(key)
     fetch("http://localhost:8888/api/v1/products/src/search?query=" + key).then((data) => {
       data.json().then((resp) => {
         console.warn("resp", resp)
-        if(resp.length>0)
-        {
-          this.setState({searchData:resp, noData:false})
+        if (resp.length > 0) {
+          this.setState({ searchData: resp, noData: false, prodt: null })
         }
-        else
-        {
-          this.setState({noData:true, searchData:null})
+        else {
+          this.setState({ noData: true, searchData: null, prodt: null })
         }
-        
+
       })
-  })
+    })
+
   }
-  
-  
+  pro() {
+    fetch("http://localhost:8888/api/v1/products/prd/prducts").then((da) => {
+      da.json().then((p) => {
+        console.warn("p", p)
+        if (this.state.prodt == null && this.state.searchData == null && this.state.noData == false) {
+          this.setState({ prodt: p, searchData: null, noData: true })
+        }
+      })
+    })
+  }
+
   render() {
-  return (
+    return (
       <div className="templateContainer">
         <div className="searchInput_Container">
-          <input id="searchInput" type="text" placeholder="Enter Product Name..." 
+          <input id="searchInput" type="text" placeholder="Enter Product Name..."
             onChange={(event) => this.search(event.target.value)
             } />
-        </div>
+          {
+            this.pro()
+          }
 
-            <div>
-              {
-                this.state.searchData?
+        </div>
+        <div>
+          {
+            this.state.prodt ?
+              <div>
+
                 <div className="template_Container">
                   {
-                    this.state.searchData.map((item) =>
-
-                    <div className="template" key={item.id}>
-                      <img src={item.imageurl} alt="" />
-                      <h3>{item.name}</h3>
-                       <p className="price">₹{item.price}</p>
-                       <p className="extra-content">{item.description}</p>
-                      
-                       <Link to="/Details" className = "read-more-link">Read More</Link>
-                    </div>
-
+                    this.state.prodt.map((i) =>
+                      <div className="template" key={i.id}>
+                        <img src={i.imageurl} alt="" />
+                        <Link to={'/products/' + i.id} className="read-more-link">  <h3>{i.name}</h3></Link>
+                        <p className="price">₹{i.price}</p>
+                        <p className="extra-content">{i.description}</p>
+                      </div>
                     )
                   }
                 </div>
-                :""
-              }
-              <div className="template_Container">
-                {
-                  this.state.noData?<h3>No Data Found</h3>:null
-                }
+
               </div>
-            </div>
+              :
+              <div>
+                {
+                  this.state.searchData ?
+                    <div className="template_Container">
+                      {
+                        this.state.searchData.map((item) =>
+
+                          <div className="template" key={item.id}>
+                            <img src={item.imageurl} alt="" />
+                            <Link to={'/products/' + item.id} className="read-more-link">  <h3>{item.name}</h3></Link>
+                            <p className="price">₹{item.price}</p>
+                            <p className="extra-content">{item.description}</p>
+
+
+                          </div>
+
+                        )
+                      }
+                    </div>
+                    : ""
+                }
+                <div className="template_Container">
+                  {
+                    this.state.noData ? <h3>No Data Found</h3> : null
+                  }
+                </div>
+              </div>
+
+
+          }
+        </div>
+
       </div>
-      )
+    )
   }
 }
-
-
-
-
-
-
-// import React, {useEffect, useState} from "react";
-// import {Link} from 'react-router-dom';
-// import './style.css';
-
-// function App() {
-//   const [searchTerm, setSearchTerm] = useState("");
-//   const [items, setItems] = useState([]);
-//   const [error, setError] = useState(null);
-
-//   useEffect(() => {
-//     fetch("http://localhost:8888/api/v1/products/prducts")
-//     .then(res => res.json())
-//     .then(
-//       (result) =>{
-//         console.log('called get items')
-//         console.log(result)
-//         setItems(result)
-//       },
-
-//       (error) => {
-//         setError(error);
-//       }
-//     )
-//   },[] )
-
-//   return (
-//       <div className="templateContainer">
-//         <div className="searchInput_Container">
-//           <input 
-//             id="searchInput" 
-//             type="text" 
-//             placeholder="Enter Product Name..." 
-//             onChange={(event) => {
-//               setSearchTerm(event.target.value);
-//             }} 
-//           s/>
-//         </div>
-
-//         <div className="template_Container">
-//           {
-//             items 
-//               .filter((val) => {
-//                 if(searchTerm == ""){
-//                   return val;
-//                 }else if(val.name.toLowerCase().includes(searchTerm.toLowerCase())){
-//                   return val;
-//                 }
-//               })
-//               .map((val) => {
-//                 return(
-//                   <div className="template" key={val.id}>
-//                       <img src={val.imageurl} alt="" />
-//                       <h3>{val.name}</h3>
-//                       <p className="price">₹{val.price}</p>
-//                       <p className="extra-content">{val.description}</p>
-                      
-//                       <Link to="/Details" className = "read-more-link">Read More</Link>
-//                       {/* <a className="read-more-link" onClick={()=>{}}><h2>Read More</h2></a> */}
-//                   </div> 
-//                 )
-//               })
-//           }
-//         </div>
-
-//       </div>
-//   )
-// }
 
 export default App;

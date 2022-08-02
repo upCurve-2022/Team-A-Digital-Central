@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import SearchFilter from "./Components/SearchFilter";
 import Details from './Components/Details';
+import Product from './Components/Product';
 
 <div className="App"></div>
 function App() {
@@ -23,7 +24,9 @@ function App() {
             <Details />
           } />
 
-          {/* <Route  path = "/product/:id"exact element = {<Details />} /> */}
+          <Route path = "/products/:pid" exact element ={
+            <Product/>
+          }  />
       
         </Routes>
 

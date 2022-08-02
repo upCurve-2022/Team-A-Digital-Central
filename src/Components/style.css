@@ -52,7 +52,7 @@
 
   .read-more-link{
     color: blueviolet;
-    text-decoration: underline;
+    text-decoration: none;
     letter-spacing: 1px;
     cursor: pointer;
   }
