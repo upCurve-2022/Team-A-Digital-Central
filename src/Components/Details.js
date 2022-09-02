@@ -9,7 +9,7 @@ function Details()
     const [error, setError] = useState(null);
 
     useEffect(() => {
-      fetch("http://localhost:8888/api/v1/products/prd/prducts")
+      fetch("http://localhost:9000/api/v1/products/prd/prducts")
       .then(res => res.json())
       .then(
         (result) =>{

@@ -14,9 +14,9 @@ class App extends Component {
   }
   search(key) {
     console.warn(key)
-    fetch("http://localhost:8888/api/v1/products/src/search?query=" + key).then((data) => {
+    fetch("http://localhost:9000/api/v1/products/src/search?query="+key).then((data) => {
       data.json().then((resp) => {
-        console.warn("resp", resp)
+        console.warn("resp",resp)
         if (resp.length > 0) {
           this.setState({ searchData: resp, noData: false, prodt: null })
         }
@@ -29,7 +29,7 @@ class App extends Component {
 
   }
   pro() {
-    fetch("http://localhost:8888/api/v1/products/prd/prducts").then((da) => {
+    fetch("http://localhost:9000/api/v1/products/prd/prducts").then((da) => {
       da.json().then((p) => {
         console.warn("p", p)
         if (this.state.prodt == null && this.state.searchData == null && this.state.noData == false) {

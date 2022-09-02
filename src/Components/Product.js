@@ -12,7 +12,7 @@ function Product()
    useEffect(() => {
     const getProduct = async () => {
         setLoading(true);
-        const response = await fetch('http://localhost:8888/api/v1/products/prd/'+pid);
+        const response = await fetch('http://localhost:8080/product-details/'+pid);
         setProduct(await response.json());
         setLoading(false);
     }
@@ -35,13 +35,13 @@ const ShowProduct = () => {
     {
        <div className="details" id="12">
          <div className="big-img">
-           <img src={product.imageurl} alt=""/>
+           <img src={product.imageUrl} alt=""/>
            </div>
 
            <div className="box">
              <div className="row">
                <h2>{product.name}</h2>
-               <span>₹{product.price}</span>
+               <span>{product.price}</span>
                </div>
                  <p>{product.details}</p>
                    <button className="cart">Buy Now</button>
